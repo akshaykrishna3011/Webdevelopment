@@ -19,6 +19,8 @@ body {
 /* navbar */
 .navbar{
     height: 75px;
+    top: 0;
+    position: sticky;
 }
 .navbar-nav .nav-link{
     color: #000;
@@ -62,6 +64,7 @@ body {
   border-radius: 30px;
   width: 200px;
   cursor: pointer;
+  transition: .5s ease-in;
 }
 .circle-btn::after {
   content: "➜"; 
@@ -82,7 +85,7 @@ body {
 }
 
 .circle-btn:hover {
-  transform: translateX(5px);
+  transform:scale(1.1);
 }
 
 
@@ -196,7 +199,6 @@ body {
   position: absolute;
   bottom: -80px;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 
